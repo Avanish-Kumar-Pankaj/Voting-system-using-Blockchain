@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Block-Vote</title>
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <header class="site-header clearfix">
+        <nav>
+            <div class="logo">
+                <h1>E-Vote</h1>
+            </div>
+        </nav>
+        <section>
+            <div class="leftside">
+                <img alt= '' src="home_page.png">
+            </div>
+            <div class="rightside">
+                <div class="container">
+                    <div class="registration-form" id="xyz">
+                        <div id="login-form">
+                            <h2>Voter Login</h2>
+                            <form id="log-in">
+                                <div class="form-group">
+                                    <label for="voterId">Voter ID:</label>
+                                    <input type="text" id="voterId" name="voterId" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                                <button type="submit" class="btn">Login</button>
+                            </form>
+                        </div>
+                        <div id="registration-form" style="display: none;">
+                            <h2>Voter Registration</h2>
+                            <form id="register">
+                                <div class="form-group">
+                                    <label for="voterId">Voter ID:</label>
+                                    <input type="text" id="voterId" name="voterId" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="constituency">Constituency Number:</label>
+                                    <input type="number" id="constituency" name="constituency" required>
+                                </div>
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                        <div id="voting" style="display: none;">
+                            <div id="voter-info-container"> </div>
+                            <select id="Party-select">
+                                <option value="">Select Party</option>
+                            </select>
+                            <div id= 'slider' class="button-slider">
+                                <button type="button" class="btn" id="vote">Vote</button>
+                                <button type="button" class="btn" id="logout">Log Out</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="button-slider">
+                    <button type="button" class="btn" id="loginBtn">Login</button>
+                    <button type="button" class="btn" id="registerBtn">Register</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="clint.js"></script>
+</body>
+
+</html>

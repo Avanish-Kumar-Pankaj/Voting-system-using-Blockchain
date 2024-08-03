@@ -1,0 +1,35 @@
+Now to setup the project there are few steps required before installing dependencies and other code.
+1. Open remix ide in your browser and paste the smartcontract code and compile it.
+2. Make sure compiler version is same as it is mentioned in the code.
+3. Install Ganache on your system and deploy the smartcontract by using one of the ganache address.
+4. Get the contract address and abi from remix ide.
+5. Setup a mongodb cluster and get the connection string.
+6. Inside the mongodb create two collection named 'voters' and 'relayers'.
+7. Create database for voter and relayer based on collection schema defined in the server.js code.
+
+
+
+
+Setup the projrct omn the system.
+1. Install node js on your system.
+2. Host Ganache on your system.
+3. Create A folder named of your choice for the project.
+4. Open project folder in terminal and run following command.
+   npm init -y
+   then a package.json file will be created in the folder.
+5. Run following command in terminal in your project folder.
+   npm install mongoose web3 express dotenv
+   several packages will bw installed and a folder named node_module will be created.
+6. Create a server.js file in project folder and copy the code of server.
+7. Create an abi folder and inside the abi folder create a file votercontract.json and paste the contract abi in it.
+8. Create a file named .env and add the mongodb connection string and contract address in it.
+   MONGODB_URI=   and CONTRACT_ADDRESS= 
+9. Make sure to mention the database name in connection string (in which both the collection are present) after cluster0.enhsamc.mongodb.net/
+10. Now create a src folder and paste all the client side code in it.
+
+The project setup is complete.
+
+Run the project.
+To run the project run 'npm start' in the project folder terminal.
+It will host the website on the 8000 port. The website can be accessed on 'http://localhost:8000' url.
+

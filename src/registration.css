@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* background-color: #dce2e7; */
+}
+
+.site-header {
+    width: 100%;
+    height: 100vh;
+    background: #0e191b;
+    background: linear-gradient(57deg, #34d8eb );
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(57deg , #3f6569);
+    display: flex;
+    color: white;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+}
+
+.logo h1 {
+    line-height: 100px;
+    padding-left: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.leftside {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.leftside img {
+    padding-left: 50px;
+    width: 800px;
+    height: 400px;
+}
+
+.rightside {
+    
+width: 40%;
+    
+/* height: auto; */
+    
+color: rgb(12, 1, 1);
+    
+text-align: left;
+    
+margin-right: 100px;
+    
+/* padding: 40px; */
+    
+/* margin: auto; */
+    
+/* display: flex; */
+    
+/* flex-direction: column; */
+    
+/* align-content: flex-end; */
+    
+/* justify-content: flex-end; */
+}
+
+.rightside h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.rightside button {
+    font-size: 17px;
+    text-transform: uppercase;
+    background: linear-gradient(57deg,#0e0f0f , #b1ebf2);
+    /* border-radius: 25px; */
+    /* padding: 20px 35px; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; /* Changed from row to column */
+    height: auto; /* Changed from 100vh to auto */
+    padding-top: 20px; /* Added padding to move the form up */
+}
+
+.registration-form {
+    background-color: #faf1f1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    /* Increased horizontal padding */
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 16px;
+    /* border: 1px solid #ccc; */
+    border-radius: 6x;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #6c63ff, #9d94ff);
+    color: #fff;
+    /* border: none; */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #9d94ff, #6c63ff);
+}
+
+.button-slider {
+    display: flex;
+     /* Center the buttons */
+    width: 88%; /* Set the width to 100% */
+    margin-top: 10px; /* Adjusted margin */
+    margin-bottom: 20px; /* Adjusted margin */
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.button-slider button {
+    padding: 10px 20px; /* Adjusted padding */
+    margin: 0 5px; /* Adjusted margin */
+    /* border: none; */
+    background-color: #bd1212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-slider button.active {
+    background-color: #ccc;
+}
+
+.button-slider button:hover {
+    background-color: #ddd;
+}
+
+  #voter-info-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #afd08f;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 98%);
+  }
+  
+  #voter-info-container p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+  }

@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Increase max-width for more horizontal space */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    margin: -1rem; /* Negative margin to counter the card margins */
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem; /* Add margin around each card */
+    width: calc(25% - 2rem); /* Adjust width for more cards per row */
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.18), 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+#result-card {
+    display: none;
+}
+
+#party-result-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -1rem;
+}
+
+#party-result-cards .card {
+    margin: 1rem;
+    width: calc(25% - 2rem);
+}
+
+/*.party-votes-container {
+    margin-top: 1rem;
+}
+*/
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.view-party-votes-btn {
+    padding: 0.5rem;
+    background-color: #4caf65;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.view-party-votes-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.18), 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.party-votes-container {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 1rem;
+}
+.party-votes-container.show {
+    display: block;
+    max-height: 500px; 
+}
+
+.party-votes-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.party-votes-container th,
+.party-votes-container td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.party-votes-container th {
+    background-color: #f2f2f2;
+}
